@@ -2,7 +2,7 @@
 /**
  * The admin-specific functionality of the plugin.
  *
- * @link       https://www.padmaunlimited.com
+ * @link       https://cp-psource.github.io/ps-padma/
  * @since      1.0.0
  *
  * @package    Padma Advanced

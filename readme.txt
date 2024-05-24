@@ -4,7 +4,7 @@ Donate link: #
 Tags: page builder, editor, landing page, drag-and-drop, padma unlimited, visual editor, wysiwyg, design, maintenance mode, coming soon, under construction, website builder, landing page builder, front-end builder
 Requires at least: 4.6
 Tested up to: 5.7.2
-Stable tag: 0.0.16
+Stable tag: 0.0.2
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -122,7 +122,7 @@ New PRO Blocks 'Store Account', 'Store login Button' and "Revolution slider"
 
 == Frequently Asked Questions ==
 = Does this plugin requires Padma Unlimited theme to work =
-Yes it does. You can download it from https://www.padmaunlimited.com/
+Yes it does. You can download it from https://github.com/cp-psource/ps-padma/releases
 
 
 == Features included ==

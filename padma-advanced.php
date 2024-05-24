@@ -3,18 +3,18 @@
  * Padma Advanced
  *
  * @package           Padma Advanced
- * @author            Padma Unlimited
- * @link              https://www.padmaunlimited.com
+ * @author            PSOURCE
+ * @link              https://github.com/cp-psource
  *
  * @wordpress-plugin
  * Plugin Name: Padma Advanced
- * Plugin URI: https://padmaunlimited.com/
+ * Plugin URI: https://cp-psource.github.io/ps-padma-advanced/
  * Description: Expand the possibilities and simplify the design and development processes of WordPress + Padma Theme based websites.
- * Version: 0.0.16
+ * Version: 0.0.2
  * Requires at least: 5.2
  * Requires PHP: 7.0
- * Author: Padma Unlimited
- * Author URI: https://www.padmaunlimited.com
+ * Author: PSOURCE
+ * Author URI: https://github.com/cp-psource
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: padma-advanced
@@ -22,10 +22,29 @@
  * WC requires at least: 3.0.0
  * WC requires at least: 3.0.0
  * WC tested up to: 4.9.1
- * @fs_premium_only admin/class-padma-advanced-admin-pro.php, includes/class-padma-advanced-blocks-pro.php, blocks-pro/
  */
-
 namespace Padma_Advanced;
+
+/**
+ * @@@@@@@@@@@@@@@@@ PS UPDATER 1.3 @@@@@@@@@@@
+ **/
+require 'psource/psource-plugin-update/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+ 
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/cp-psource/ps-padma-advanced',
+	__FILE__,
+	'ps-padma-advanced'
+);
+ 
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch('main');
+
+/**
+ * @@@@@@@@@@@@@@@@@ ENDE PS UPDATER 1.3 @@@@@@@@@@@
+ **/
+
+
 
 /**
  * If this file is called directly, abort.
@@ -37,7 +56,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Version.
  */
-define( 'PADMA_ADVANCED_VERSION', '0.0.16' );
+define( 'PADMA_ADVANCED_VERSION', '0.0.2' );
 
 
 /**
